@@ -13,17 +13,18 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
+    "module": "commonjs",
+    "outDir": "dist",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "isolatedModules": false,
+    "noEmit": false,
   },
+  "compileOnSave": true,
   "include": [
-    "src"
+    "server"
   ],
   "exclude": [
-    "server"
+    "src"
   ],
 }
